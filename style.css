@@ -466,9 +466,9 @@ img { max-width: 100%; display: block; }
 .about-text-secondary {
     font-size: 15px;
     line-height: 1.8;
-    color: var(--outline);
+    color: var(--on-surface);
     margin-bottom: 40px;
-    font-style: italic;
+    font-weight: 700;
 }
 .about-values { display: flex; gap: 32px; flex-wrap: wrap; }
 .value-item {
