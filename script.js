@@ -57,6 +57,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger after a short delay
     setTimeout(animateCounters, 800);
 
+    // ── Lightbox ──
+    window.openLightbox = function(imageSrc) {
+        if (!imageSrc) return;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        if (lightbox && lightboxImg) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+    
+    window.closeLightbox = function() {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
     // ── Reveal on scroll ──
     const reveals = document.querySelectorAll(
         '.section-about, .section-brands, .section-video, .section-contact, .section-newsletter, .brand-image-card, .contact-info-card, .contact-map'
