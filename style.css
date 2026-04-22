@@ -317,7 +317,26 @@ img { max-width: 100%; display: block; }
     border: 2px solid rgba(255,255,255,0.1);
     transition: all 0.3s var(--ease);
 }
-.hero-brand-item:hover .brand-real-logo {
+.brand-fallback-logo {
+    width: 92px;
+    height: 92px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-headline);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.1;
+    padding: 6px;
+    word-break: break-word;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border: 2px solid rgba(255,255,255,0.1);
+    transition: all 0.3s var(--ease);
+}
+.hero-brand-item:hover .brand-real-logo,
+.hero-brand-item:hover .brand-fallback-logo {
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     border-color: rgba(255,255,255,0.5);
 }
