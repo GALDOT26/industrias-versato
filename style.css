@@ -309,29 +309,29 @@ img { max-width: 100%; display: block; }
     transform: translateY(-5px);
 }
 .brand-real-logo {
-    width: 92px;
-    height: 92px;
-    border-radius: 32px;
-    object-fit: cover;
+    width: auto;
+    height: 44px;
+    border-radius: 50px;
+    object-fit: contain;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     border: 2px solid rgba(255,255,255,0.1);
     transition: all 0.3s var(--ease);
 }
 .brand-fallback-logo {
-    width: 92px;
-    height: 92px;
-    border-radius: 32px;
+    width: auto;
+    height: 44px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-family: var(--font-headline);
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 800;
-    line-height: 1.1;
-    padding: 2px;
-    letter-spacing: -0.2px;
-    word-break: normal;
+    line-height: 1;
+    padding: 0 24px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     border: 2px solid rgba(255,255,255,0.1);
     transition: all 0.3s var(--ease);
