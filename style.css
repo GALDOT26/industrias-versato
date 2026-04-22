@@ -1026,14 +1026,13 @@ img { max-width: 100%; display: block; }
     background: var(--primary);
     color: #ffffff;
 }
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .audio-toggle {
         bottom: 20px;
         left: 20px;
         width: 45px;
         height: 45px;
         font-size: 18px;
-    }
     }
 }
 
